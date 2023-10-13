@@ -44,5 +44,9 @@ describe Solver do
     it "returns 'fizzbuzz' when 'N' is divisible by 3 and by 5" do
       expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
     end
+
+    it "returns 'N' as a string when 'N' is not divisible by 3 and/or by 5" do
+      expect(solver.fizzbuzz(7)).to eq('7')
+    end
   end
 end
