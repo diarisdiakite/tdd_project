@@ -52,5 +52,9 @@ describe Solver do
     it 'handles very large numbers' do
       expect(solver.fizzbuzz(9_999_999)).to eq('fizz')
     end
+
+    it 'handles negative numbers' do
+      expect(solver.fizzbuzz(-6)).to eq('fizz')
+    end
   end
 end
