@@ -8,4 +8,14 @@ class Solver
       n * factorial(n - 1)
     end
   end
+
+  def reverse(str)
+    if str.length == 0
+      raise ArgumentError, 'Cannot reverse an empty string'
+    elsif str.length == 1
+      str
+    else
+      str.reverse
+    end
+  end
 end
