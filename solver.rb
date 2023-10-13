@@ -1,16 +1,16 @@
 class Solver
-  def factorial(n)
-    if n < 0
+  def factorial(num)
+    if num.negative?
       raise ArgumentError
-    elsif n == 0
+    elsif num.zero?
       1
     else
-      n * factorial(n - 1)
+      num * factorial(num - 1)
     end
   end
 
   def reverse(str)
-    if str.length == 0
+    if str.empty?
       raise ArgumentError, 'Cannot reverse an empty string'
     elsif str.length == 1
       str
@@ -19,15 +19,15 @@ class Solver
     end
   end
 
-  def fizzbuzz(n)
-    if n % 3 == 0 && n % 5 == 0
+  def fizzbuzz(num)
+    if (num % 3).zero? && (num % 5).zero?
       'fizzbuzz'
-    elsif n % 3 == 0
+    elsif (num % 3).zero?
       'fizz'
-    elsif n % 5 == 0
+    elsif (num % 5).zero?
       'buzz'
     else
-      n.to_s
+      num.to_s
     end
   end
 end
