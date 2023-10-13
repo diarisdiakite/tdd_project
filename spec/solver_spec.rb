@@ -48,5 +48,9 @@ describe Solver do
     it "returns 'N' as a string when 'N' is not divisible by 3 and/or by 5" do
       expect(solver.fizzbuzz(7)).to eq('7')
     end
+
+    it 'handles very large numbers' do
+      expect(solver.fizzbuzz(9_999_999)).to eq('fizz')
+    end
   end
 end
