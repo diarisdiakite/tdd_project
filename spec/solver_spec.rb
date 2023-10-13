@@ -31,4 +31,11 @@ describe Solver do
       expect { solver.reverse('') }.to raise_error(ArgumentError)
     end
   end
+
+  describe "#fizzbuzz" do
+    it "returns 'fizz' when 'N' is divisible by 3" do
+      expect(solver.fizzbuzz(9)).to eq('fizz')
+    end
+  end
+
 end
