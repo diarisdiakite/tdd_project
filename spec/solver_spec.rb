@@ -36,6 +36,10 @@ describe Solver do
     it "returns 'fizz' when 'N' is divisible by 3" do
       expect(solver.fizzbuzz(9)).to eq('fizz')
     end
+
+    it "returns 'buzz' when 'N' is divisible by 5" do
+      expect(solver.fizzbuzz(25)).to eq('buzz')
+    end
   end
 
 end
